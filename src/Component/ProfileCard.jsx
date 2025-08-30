@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
 import { Typewriter } from 'react-simple-typewriter';
 import profile from '../Assest/profile.jpeg'
+import { Link } from 'react-router-dom';
 
 const ProfileCard = () => {
   const [showAbout, setShowAbout] = useState(false);
@@ -192,22 +193,74 @@ const textStyle = {
   };
 
   const AboutContent = () => (
-    <div style={containerStyle}>
-      <h3 style={headingStyle}>About Me</h3>
-      <p style={textStyle}>
-        I'm <strong style={highlightStyle}>Mithuna Malini</strong>, a passionate BCA student at Stella Maris College for Women, Chennai. I specialize in full-stack web development and building real-time applications that solve real-world problems.
-      </p>
-      <p style={textStyle}>
-        With proficiency in <strong style={highlightStyle}>C, Java, Python, React, MongoDB, PostgreSQL, and the MERN stack</strong>, I’ve developed projects like a College Event Management System and a mobile app for campus use.
-      </p>
-      <p style={textStyle}>
-        My academic journey began at <strong style={highlightStyle}>Sri Sankara Vidyalaya</strong>, where I completed my 12th grade with <strong style={highlightStyle}>96.7%</strong>. My college years at Stella Maris were enriched by workshops, hands-on development, leadership experiences, and a <strong style={highlightStyle}>Proficiency Prize</strong>.
-      </p>
-      <p style={textStyle}>
-        I’m a collaborative learner with leadership qualities, always seeking new challenges and contributing meaningfully to any team I’m part of.
-      </p>
-    </div>
-  );
+  <div style={{
+    backgroundColor: '#000',
+    padding: '30px 25px',
+    borderRadius: '12px',
+    boxShadow: '0 0 20px rgba(0, 229, 255, 0.3)',
+    color: '#fff',
+    fontSize: '1.1rem',
+    lineHeight: '1.8',
+    letterSpacing: '0.02em',
+  }}>
+    
+    {/* Elegant Heading */}
+    <h3 style={{
+      fontSize: '2.2rem',
+      textAlign: 'center',
+      marginBottom: '25px',
+      fontWeight: '700',
+      color: '#fff',
+      textShadow: '0px 0px 6px rgba(0, 229, 255, 0.6)',
+      letterSpacing: '0.05em',
+    }}>
+      About Me
+    </h3>
+
+    {/* Paragraphs */}
+    <p style={{
+      marginBottom: '18px',
+      borderLeft: '3px solid #00e5ff',
+      paddingLeft: '12px',
+    }}>
+      Hi, I’m <strong style={{ color: '#00e5ff' }}>Mithuna Malini</strong>, a dedicated student of Computer Applications at 
+      <strong style={{ color: '#00e5ff' }}> Stella Maris College for Women, Chennai</strong>.  
+      My passion lies in <strong>full-stack development, data analysis, and intelligent applications</strong>, 
+      where I thrive on transforming innovative ideas into impactful digital solutions.
+    </p>
+
+    <p style={{
+      marginBottom: '18px',
+      borderLeft: '3px solid #7c4dff',
+      paddingLeft: '12px',
+    }}>
+      I have developed expertise in <strong>Python, Java, C, JavaFX, JavaScript, PostgreSQL, MongoDB, React, Node.js, and MERN stack</strong>.  
+      I am also skilled in <strong>data analysis, machine learning, version control (GitHub), and UI/UX design</strong> using tools like 
+      <strong> Canva, GIMP, and Microsoft Office Suite</strong>.
+    </p>
+
+    <p style={{
+      marginBottom: '18px',
+      borderLeft: '3px solid #00e5ff',
+      paddingLeft: '12px',
+    }}>
+      Some of my projects include a <strong>College Event Management System</strong>, a 
+      <strong> real-time MERN application</strong>, and a <strong>mobile app for campus use</strong>.  
+      I have also presented research at international conferences, exploring the intersection of 
+      <strong> AI, DevOps, and disaster management solutions</strong>.
+    </p>
+
+    <p style={{
+      borderLeft: '3px solid #7c4dff',
+      paddingLeft: '12px',
+    }}>
+      With a proven record of <strong>academic excellence and leadership</strong>, I bring creativity, 
+      technical depth, and a collaborative spirit to every challenge.  
+      I aspire to contribute to projects that combine <strong>technology, innovation, and real-world impact</strong>.
+    </p>
+  </div>
+);
+
 
   return (
     <div style={styles.container}>
@@ -226,6 +279,7 @@ const textStyle = {
         'Frontend Developer',
         'Backend Developer',
         'MERN Stack Developer',
+        'Python Developer'
       ]}
       loop={0} // infinite
       cursor
@@ -244,9 +298,12 @@ const textStyle = {
   }}>
     Crafting flawless user journeys powered by inspired backend brilliance✨
   </span><br />
-  I'm Mithuna Malini, a passionate BCA student at Stella Maris College, Chennai.
-  I specialize in full-stack development and love building real-time, impactful applications.
-  With strong technical skills and leadership experience, I thrive in collaborative environments.
+  I am a passionate tech enthusiast with a BCA background and specialization in full-stack web development, 
+  currently pursuing an M.Sc. in Data Science at VIT Chennai to broaden my expertise in real-time data-driven applications.
+   My commitment to continuous learning drives me to deliver innovation and excellence in every project. Skilled in C, Java, Python,
+    the MERN stack, React, Servlets, MongoDB, and PostgreSQL, I have applied my knowledge through impactful projects such as a college Event Management
+     System and a mobile application for campus use. With strong leadership qualities, a collaborative spirit, and a proactive mindset, 
+  I am dedicated to contributing to team success and driving meaningful outcomes.
 </p>
 
           <div style={styles.socialIcons}>
@@ -279,19 +336,18 @@ const textStyle = {
           <button style={styles.button} onClick={() => setShowAbout(true)}>
             About
           </button>
-         <button
-  style={styles.button}
-  onClick={() => (window.location.href = '/education')}
->
-  Education
-</button>
-
+         <Link to="/education">
+  <button style={styles.button}>Education</button>
+</Link>
+ <Link to="/Project">
+  <button style={styles.button}>Project</button>
+</Link>
         </div>
       </div>
 
       <div style={styles.right}>
         <div style={styles.profileGlow}>
-          <img src={profile }  style={styles.profileImg} />
+          <img src={profile } alt='profile' style={styles.profileImg} />
         </div>
       </div>
 

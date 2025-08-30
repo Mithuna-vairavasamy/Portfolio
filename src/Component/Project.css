@@ -1,0 +1,158 @@
+/* Projects Section */
+.projects-section {
+  padding: 60px 20px;
+  background: #0d0d0d; /* Black background */
+  text-align: center;
+}
+
+.projects-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #00ffe7; /* Neon heading */
+}
+
+.project-category {
+  margin-bottom: 60px;
+}
+
+.category-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #fff; /* White text */
+}
+
+/* Grid layout for project cards */
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Always 3 per row */
+  gap: 25px;
+  justify-content: center;
+}
+
+/* Project Card */
+.project-card {
+  background: rgba(20, 20, 20, 0.95); /* Dark card */
+  border-radius: 12px;
+  padding: 20px;
+  text-align: left;
+  box-shadow: 0 0 18px rgba(0, 255, 231, 0.7);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  color: #fff;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(0, 255, 231, 0.9),
+              0 0 40px rgba(0, 255, 231, 0.7);
+}
+
+/* Project Image */
+.project-img {
+  width: 98px;
+  height: 98px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+.project-icon{
+  width: 98px;
+  height: 98px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+/* Title & Duration */
+.project-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 5px 0;
+  color: #fff; /* White */
+}
+
+.project-duration {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #bbb; /* Light gray */
+  margin-bottom: 10px;
+}
+
+/* Description */
+.project-description {
+  font-size: 0.95rem;
+  color: #ccc; /* Softer gray */
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+/* Tech Stack Tags */
+.tech-stack {
+  margin: 12px 0;
+}
+
+.tech-tag {
+  display: inline-block;
+  background: rgba(0, 255, 231, 0.1);
+  border-radius: 6px;
+  padding: 5px 10px;
+  margin: 3px;
+  font-size: 0.85rem;
+  color: #00ffe7;
+  border: 1px solid #00ffe7;
+}
+
+/* GitHub Link */
+.project-card a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-top: 8px;
+  color: #00ffe7;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.project-card a:hover {
+  color: #f39c12; /* Gold hover effect */
+}
+
+.project-card a svg {
+  margin-right: 6px;
+}
+
+
+
+@media (max-width: 1024px) {
+  .project-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .project-container {
+    grid-template-columns: 1fr; /* 1 per row on mobile */
+  }
+}
+.back-button {
+  position: absolute;  /* Take it out of normal flow */
+  top: 20px;           /* Distance from top */
+  right: 20px;         /* Distance from right */
+  padding: 8px 14px;
+  background: #4cafef;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+  z-index: 100; /* stays above content */
+}
+
+.back-button:hover {
+  background: #3790d8;
+}
+
+
+.back-button:hover {
+  color: #f39c12;
+}
