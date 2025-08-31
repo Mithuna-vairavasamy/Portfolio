@@ -223,11 +223,14 @@ const textStyle = {
       borderLeft: '3px solid #00e5ff',
       paddingLeft: '12px',
     }}>
-      Hi, I’m <strong style={{ color: '#00e5ff' }}>Mithuna Malini</strong>, a dedicated student of Computer Applications at 
-      <strong style={{ color: '#00e5ff' }}> Stella Maris College for Women, Chennai</strong>.  
-      My passion lies in <strong>full-stack development, data analysis, and intelligent applications</strong>, 
-      where I thrive on transforming innovative ideas into impactful digital solutions.
-    </p>
+   
+  Hi, I’m <strong style={{ color: '#00e5ff' }}>Mithuna Malini</strong>, a dedicated student of Computer Applications at 
+  <strong style={{ color: '#00e5ff' }}> Stella Maris College for Women, Chennai</strong>.  
+  My passion lies in <strong>full-stack development, data analysis, and intelligent applications</strong>, 
+  where I thrive on transforming innovative ideas into impactful digital solutions.  
+  Currently, I am pursuing my master’s at <strong style={{ color: '#00e5ff' }}>VIT</strong> to further enhance my skills and deepen my expertise.
+</p>
+
 
     <p style={{
       marginBottom: '18px',

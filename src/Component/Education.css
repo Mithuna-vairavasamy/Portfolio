@@ -192,3 +192,39 @@
   cursor: pointer;
   font-size: 16px;
 }
+
+
+
+/* Make cards stack on small screens */
+@media (max-width: 768px) {
+  .edu-card {
+    flex-direction: column; /* Stack left and right vertically */
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .edu-left {
+    margin-bottom: 15px; /* Space between icon/title and description */
+  }
+
+  .edu-right {
+    max-width: 100%; /* Take full width on mobile */
+  }
+}
+@media (max-width: 480px) {
+  .edu-card {
+    padding: 15px;
+  }
+
+  .edu-title {
+    font-size: 1.5rem;
+  }
+
+  .edu-right p {
+    font-size: 0.9rem;
+  }
+
+  .edu-left h3 {
+    font-size: 1rem;
+  }
+}

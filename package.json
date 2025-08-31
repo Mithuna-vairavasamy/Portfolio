@@ -2,7 +2,7 @@
   "name": "my-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mithuna-vairavasamy.github.io/my-portfolio",
+  "homepage": "https://mithuna-vairavasamy.github.io/Portfolio",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -16,6 +16,7 @@
     "react-simple-typewriter": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
+  
  "scripts": {
   "start": "react-scripts start",
   "build": "react-scripts build",
@@ -45,4 +46,5 @@
   "devDependencies": {
     "gh-pages": "^6.3.0"
   }
+  
 }
