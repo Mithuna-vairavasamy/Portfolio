@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.f59b3e51.css",
-    "main.js": "/Portfolio/static/js/main.d0b2f3ac.js",
+    "main.css": "/Portfolio/static/css/main.742417d5.css",
+    "main.js": "/Portfolio/static/js/main.d75995f9.js",
     "static/js/453.acca0757.chunk.js": "/Portfolio/static/js/453.acca0757.chunk.js",
     "static/media/eventopia.png": "/Portfolio/static/media/eventopia.d907631cab4a7fc5ba82.png",
     "static/media/centum.jpg": "/Portfolio/static/media/centum.cc92016a531ca642c01f.jpg",
@@ -23,12 +23,12 @@
     "static/media/ozzi.png": "/Portfolio/static/media/ozzi.ad5fcdd7d8972a20e9ae.png",
     "static/media/logo1.png": "/Portfolio/static/media/logo1.eebc2c446c14cdaf8986.png",
     "index.html": "/Portfolio/index.html",
-    "main.f59b3e51.css.map": "/Portfolio/static/css/main.f59b3e51.css.map",
-    "main.d0b2f3ac.js.map": "/Portfolio/static/js/main.d0b2f3ac.js.map",
+    "main.742417d5.css.map": "/Portfolio/static/css/main.742417d5.css.map",
+    "main.d75995f9.js.map": "/Portfolio/static/js/main.d75995f9.js.map",
     "453.acca0757.chunk.js.map": "/Portfolio/static/js/453.acca0757.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f59b3e51.css",
-    "static/js/main.d0b2f3ac.js"
+    "static/css/main.742417d5.css",
+    "static/js/main.d75995f9.js"
   ]
 }
